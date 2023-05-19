@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -27,30 +28,96 @@ header h1 a {
   font: bold 24px/1 "arial";
   color: #333;
 }
-
-ul {
+header ul {
   display: flex;
   gap: 20px;
 }
-ul#gnb a {
-  font: bold 24px/1 "arial";
+header ul#gnb {
+  gap: 40px;
+}
+header ul#gnb a {
+  font: bold 14px/1 "arial";
   color: #777;
 }
-ul.sns a {
+header ul.sns a {
   font-size: 20px;
   color: #888;
 }
+header .btnCall {
+  display: none;
+}
 
+/*
+반응형 구현 순서
+1. 일단 웹버전의 scss구문을 모바일 미디어쿼리 안쪽에 모두 붙여넣기
+2.고칠 필요가 없는 구문은 소거법으로 지워나감
+3. 모바일 구문에서 꼭 수정해야 되는 것들
+----- 넓이값이 고정 px인 요소는 가로 폭이 100%가 되도록 퍼센트로 변환
+----- 대신 높이 값은 고정 px값이어도 상관없음
+------ 가능하다면 세로관련 높이값과 여백을 줄일수 있으면 줄이는 걸 추천
+*/
+@media screen and (max-width: 999px) {
+  header {
+    height: 100px;
+    padding: 10px 10%;
+  }
+  header h1 {
+    position: relative;
+    top: -2px;
+  }
+  header h1 a {
+    font: bold 20px/1 "arial";
+  }
+  header ul {
+    display: none;
+  }
+  header .btnCall {
+    color: #444;
+    font-size: 20px;
+  }
+}
 #visual {
   width: 100%;
   height: calc(100vh - 120px);
   background: #111;
+  position: relative;
+  display: flex;
+  padding: 0px 10vw;
+  align-items: center;
 }
 #visual #video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.3;
+}
+#visual .txt {
+  position: relative;
+}
+#visual .txt h1 {
+  font-weight: normal;
+  font-size: 8vw;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+#visual .txt p {
+  width: 70%;
+  font: 20px/1.2 "arial";
+  color: #888;
+  margin-bottom: 80px;
+}
+#visual .txt a {
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+  font: 11px/30px "arial";
+  color: #bbb;
+  border: 1px solid #bbb;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

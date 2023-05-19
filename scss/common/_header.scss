@@ -13,22 +13,59 @@ header {
 			color: #333;
 		}
 	}
-}
 
-ul {
-	display: flex;
-	gap: 20px;
-	&#gnb {
-		a {
-			font: bold 24px/1 'arial';
-			color: #777;
+	ul {
+		display: flex;
+		gap: 20px;
+		&#gnb {
+			gap: 40px;
+			a {
+				font: bold 14px/1 'arial';
+				color: #777;
+			}
+		}
+
+		&.sns {
+			a {
+				font-size: 20px;
+				color: #888;
+			}
 		}
 	}
+	.btnCall {
+		display: none;
+	}
+}
 
-	&.sns {
-		a {
+/*
+반응형 구현 순서
+1. 일단 웹버전의 scss구문을 모바일 미디어쿼리 안쪽에 모두 붙여넣기
+2.고칠 필요가 없는 구문은 소거법으로 지워나감
+3. 모바일 구문에서 꼭 수정해야 되는 것들
+----- 넓이값이 고정 px인 요소는 가로 폭이 100%가 되도록 퍼센트로 변환
+----- 대신 높이 값은 고정 px값이어도 상관없음
+------ 가능하다면 세로관련 높이값과 여백을 줄일수 있으면 줄이는 걸 추천
+*/
+
+@media screen and (max-width: 999px) {
+	header {
+		height: 100px;
+		padding: 10px 10%;
+
+		h1 {
+			position: relative;
+			top: -2px;
+			a {
+				font: bold 20px/1 'arial';
+			}
+		}
+
+		ul {
+			display: none;
+		}
+		.btnCall {
+			color: #444;
 			font-size: 20px;
-			color: #888;
 		}
 	}
 }
