@@ -174,4 +174,25 @@ header .btnCall {
   color: #888;
 }
 
+@media screen and (max-width: 999px) {
+  #vids {
+    padding: 180px 10vw 150px;
+  }
+  #vids .wrap {
+    gap: 20px;
+  }
+  #vids .wrap article {
+    flex: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 639px) {
+  #vids {
+    padding: 140px 10vw 120px;
+  }
+  #vids .wrap article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
