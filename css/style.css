@@ -134,5 +134,44 @@ header .btnCall {
     width: 100%;
   }
 }
+#vids {
+  width: 100%;
+  padding: 250px 10vw 100px;
+}
+#vids h1 {
+  text-align: center;
+  font: bold 22px/1 "arial";
+  color: #444;
+  margin-bottom: 50px;
+}
+#vids .wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+#vids .wrap article {
+  flex: 1;
+}
+#vids .wrap article .pic {
+  width: 100%;
+  height: 130px;
+  margin-bottom: 20px;
+}
+#vids .wrap article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#vids .wrap article h2 {
+  font: bold 16px/2 "arial";
+  color: #555;
+  margin-bottom: 10px;
+}
+#vids .wrap article p {
+  font: 13px/1.3 "arial";
+  color: #888;
+}
 
 /*# sourceMappingURL=style.css.map */
