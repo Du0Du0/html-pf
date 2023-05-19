@@ -46,3 +46,23 @@
 		}
 	}
 }
+
+@media screen and (max-width: 999px) {
+	#visual {
+		height: calc(100vh - 100px);
+
+		.txt {
+			h1 {
+				font-size: 12vw;
+			}
+
+			p {
+				width: 100%;
+			}
+
+			a {
+				width: 100%;
+			}
+		}
+	}
+}

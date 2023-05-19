@@ -120,4 +120,19 @@ header .btnCall {
   text-align: center;
 }
 
+@media screen and (max-width: 999px) {
+  #visual {
+    height: calc(100vh - 100px);
+  }
+  #visual .txt h1 {
+    font-size: 12vw;
+  }
+  #visual .txt p {
+    width: 100%;
+  }
+  #visual .txt a {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
