@@ -47,7 +47,7 @@
 	}
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: $tablet) {
 	#visual {
 		height: calc(100vh - 100px);
 
