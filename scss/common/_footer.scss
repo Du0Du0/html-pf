@@ -1,0 +1,40 @@
+footer {
+	padding: 120px 10vw;
+	background: #333;
+
+	.upper {
+		padding: 20px 0px;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #777;
+
+		h1 {
+			font: bold 24px/1 'arial';
+			color: #777;
+		}
+
+		ul {
+			display: flex;
+			gap: 20px;
+
+			a {
+				font: 14px/1 'arial';
+				color: #777;
+			}
+		}
+	}
+
+	.lower {
+		padding: 20px 0px;
+
+		address,
+		p {
+			font: 14px/1.2 'arial';
+			color: #777;
+
+			&:last-child {
+				margin-top: 20px;
+			}
+		}
+	}
+}

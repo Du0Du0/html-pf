@@ -76,6 +76,41 @@ header .btnCall {
     font-size: 20px;
   }
 }
+footer {
+  padding: 120px 10vw;
+  background: #333;
+}
+footer .upper {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #777;
+}
+footer .upper h1 {
+  font: bold 24px/1 "arial";
+  color: #777;
+}
+footer .upper ul {
+  display: flex;
+  gap: 20px;
+}
+footer .upper ul a {
+  font: 14px/1 "arial";
+  color: #777;
+}
+footer .lower {
+  padding: 20px 0px;
+}
+footer .lower address,
+footer .lower p {
+  font: 14px/1.2 "arial";
+  color: #777;
+}
+footer .lower address:last-child,
+footer .lower p:last-child {
+  margin-top: 20px;
+}
+
 #visual {
   width: 100%;
   height: calc(100vh - 120px);
@@ -410,6 +445,29 @@ header .btnCall {
 #news ul li span {
   font: 14px/1 "arial";
   color: orange;
+}
+
+@media screen and (max-width: 639px) {
+  #news {
+    padding: 120px 10vw 80px;
+  }
+  #news ul::before {
+    display: none;
+  }
+  #news ul li {
+    width: 100%;
+  }
+  #news ul li::before {
+    display: none;
+  }
+  #news ul li:nth-of-type(even) {
+    float: left;
+    transform: translateY(0%);
+    justify-content: flex-start;
+  }
+  #news ul li:nth-of-type(even) a {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
