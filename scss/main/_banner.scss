@@ -1,0 +1,27 @@
+#banner {
+	width: 100%;
+	height: 40vh;
+	background: #111;
+	padding: 0px 10vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	gap: 20px;
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	//이미지는 특정 프레임에 종속되어 있지만
+	//이미지 위치의 기준점을 브라우저로 고정
+	background-attachment: fixed;
+
+	h1 {
+		font: bold 24px/1 'arial';
+		color: #fff;
+	}
+	p {
+		font: 14px/1.2 'arial';
+		color: #ccc;
+	}
+}
