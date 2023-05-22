@@ -111,6 +111,16 @@ footer .lower p:last-child {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 999px) {
+  footer .upper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .upper h1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 #visual {
   width: 100%;
   height: calc(100vh - 120px);
@@ -409,6 +419,7 @@ footer .lower p:last-child {
   justify-content: flex-start;
   align-content: center;
   position: relative;
+  min-height: 130px;
 }
 #news ul li::before {
   content: "";
