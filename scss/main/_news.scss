@@ -82,3 +82,32 @@
 		}
 	}
 }
+
+@media screen and (max-width: $mobile) {
+	#news {
+		padding: 120px 10vw 80px;
+
+		ul {
+			&::before {
+				display: none;
+			}
+
+			li {
+				&::before {
+					display: none;
+				}
+
+				width: 100%;
+
+				&:nth-of-type(even) {
+					float: left;
+					transform: translateY(0%);
+					a {
+						text-align: left;
+					}
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+}
