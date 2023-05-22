@@ -87,3 +87,46 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	#pics {
+		padding: 150px 10vw 100px;
+
+		.wrap {
+			//고정되어 있는 높이값을 다시 풀어줄때
+			height: auto;
+			flex-wrap: wrap;
+
+			.left {
+				width: 100%;
+				height: 350px;
+				margin-bottom: 20px;
+
+				i {
+					font-size: 80px;
+				}
+			}
+			.right {
+				width: 100%;
+				height: 600px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#pics {
+		padding: 120px 10vw 80px;
+
+		.wrap {
+			.right {
+				height: 600px;
+
+				article:nth-of-type(1),
+				article:nth-of-type(2) {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
