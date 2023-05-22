@@ -1,0 +1,36 @@
+#news {
+	width: 100%;
+	padding: 200px 10vw 150px;
+	background: #ddd;
+
+	h1 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	ul {
+		width: 100%;
+
+		li {
+			width: 100%;
+			padding: 20px 30px;
+			background: #fff;
+			margin-bottom: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: center;
+
+			a {
+				font: 14px/1.2 'arial';
+				color: #777;
+			}
+
+			span {
+				font: 14px/1 'arial';
+				color: orange;
+			}
+		}
+	}
+}

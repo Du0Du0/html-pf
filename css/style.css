@@ -335,4 +335,36 @@ header .btnCall {
   color: #ccc;
 }
 
+#news {
+  width: 100%;
+  padding: 200px 10vw 150px;
+  background: #ddd;
+}
+#news h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#news ul {
+  width: 100%;
+}
+#news ul li {
+  width: 100%;
+  padding: 20px 30px;
+  background: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+#news ul li a {
+  font: 14px/1.2 "arial";
+  color: #777;
+}
+#news ul li span {
+  font: 14px/1 "arial";
+  color: orange;
+}
+
 /*# sourceMappingURL=style.css.map */
